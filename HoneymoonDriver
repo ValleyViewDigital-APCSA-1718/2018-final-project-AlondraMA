@@ -1,0 +1,118 @@
+/**
+ * Alondra Mendez-Acosta
+ * */
+ 
+ import java.util.Scanner; //Allows use of Scanner
+ 
+ public class HoneymoonDriver
+ {
+     public static void main (String[] args)
+     {
+         Scanner keyboard = new Scanner(System.in);//Creates an object that inputs
+         String LHM1, LHM2, LHM3, LHM4;
+         int KHM1, KHM2, KHM3, KHM4;
+         String SHM1, SHM2, SHM3, SHM4;
+         String WFHM1, WFHM2, WFHM3, WFHM4;
+         int GHM1,GHM2, GHM3, GHM4;
+         String DCHM1, DCHM2, DCHM3, DCHM4;
+         String A1, A2, A3, A4;
+         int D1, D2, D3, D4;
+         String T1, T2, T3, T4;
+         
+  
+         //Input and output a String
+         System.out.println ("Your HoneyMoon Location:(4) ");
+         LHM1 = keyboard.nextLine();
+         LHM2 = keyboard.nextLine();
+         LHM3 = keyboard.nextLine();
+         LHM4 = keyboard.nextLine();
+         
+         
+         System.out.println ("Spouse's Name(4):");
+         SHM1 = keyboard.nextLine();
+         SHM2 = keyboard.nextLine();
+         SHM3 = keyboard.nextLine();
+         SHM4 = keyboard.nextLine();
+         
+         System.out.println ("Enter 4 Honeymoon 'favors' you'll bring back for family:");
+         WFHM1 = keyboard.nextLine();
+         WFHM2 = keyboard.nextLine();
+         WFHM3 = keyboard.nextLine();
+         WFHM4 = keyboard.nextLine();
+                  
+         System.out.println ("Enter 4 Honeymoon 'favors' you'll bring back for family:");
+         WFHM1 = keyboard.nextLine();
+         WFHM2 = keyboard.nextLine();
+         WFHM3 = keyboard.nextLine();
+         WFHM4 = keyboard.nextLine();
+         
+         System.out.println ("How many Kids do you plan on having(4)");
+         KHM1 = keyboard.nextInt(); //Assigns inputted value into a variable.
+         KHM2 = keyboard.nextInt();
+         KHM3 = keyboard.nextInt();
+         KHM4 = keyboard.nextInt();
+         
+         System.out.println ("Enter Number of People that come with you(if any):(4 numbers)");
+         GHM1 = keyboard.nextInt();
+         GHM2 = keyboard.nextInt();
+         GHM3 = keyboard.nextInt();
+         GHM4 = keyboard.nextInt();
+         
+         System.out.println ("Enter what you'll wear: (4)");
+         DCHM1 = keyboard.nextLine();
+         DCHM2 = keyboard.nextLine();
+         DCHM3 = keyboard.nextLine();
+         DCHM4 = keyboard.nextLine();
+         
+         System.out.println (" Enter what you'll do on the Honeymoon :(4)");
+         A1 = keyboard.nextLine();
+         A2 = keyboard.nextLine();
+         A3 = keyboard.nextLine();
+         A4 = keyboard.nextLine();
+
+         
+         System.out.println ("Enter how you'll get there: (4)");
+         T1 = keyboard.nextLine();
+         T2 = keyboard.nextLine();
+         T3 = keyboard.nextLine();
+         T4 = keyboard.nextLine();
+         
+            System.out.println ("Enter how long you'll stay: (4)");
+         D1 = keyboard.nextInt();
+         D2 = keyboard.nextInt();
+         D3 = keyboard.nextInt();
+         D4 = keyboard.nextInt();
+         
+         
+         
+     
+        
+         //Okay hopefully the thing that puts everything together
+         HoneyMoon game3 = new HoneyMoon (LHM1, LHM2, LHM3,LHM4, KHM1,KHM2,KHM3,
+         KHM4,SHM1,SHM2,SHM3,SHM4, WFHM1,WFHM2,WFHM3,WFHM4,GHM1,GHM2,GHM3,
+         GHM4,DCHM1,DCHM2,DCHM3,DCHM4, A1, A2, A3, A4, D1, D2, D3, D4, 
+         T1, T2, T3, T4);
+       
+         System.out.println(game3.toString() + "\n" +  "Language Used During Honey Moon:"
+         + game3.language());
+         //Prints result;
+         
+     }//end main
+ }// end class
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+         
