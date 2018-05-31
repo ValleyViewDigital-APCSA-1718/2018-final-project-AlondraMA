@@ -1,0 +1,108 @@
+import java.util.ArrayList;
+
+public class CASH
+{
+    // instance variables
+    private ArrayList<String> Location= new ArrayList<String>(4);
+    private ArrayList<Integer> KidNum= new ArrayList<Integer>(4);
+    private ArrayList<String> SpouseName = new ArrayList<String>(4);
+    
+    //Zero arg constructor
+    public CASH()
+    {
+     this.Location = Location;
+     this.KidNum= KidNum;
+     this.SpouseName= SpouseName;
+     
+     
+        
+    }//zero arg constructor
+    
+    public CASH(String L1, String L2, String L3, 
+    String L4, int K1, int K2, int K3, int K4, String S1, String S2, String S3, String S4)
+    {
+        Location.add(L1); 
+        Location.add(L2);
+        Location.add(L3);
+        Location.add(L4);
+        KidNum.add(K1);
+        KidNum.add(K2);
+        KidNum.add(K3);
+        KidNum.add(K4);
+        SpouseName.add(S1);
+        SpouseName.add(S2);
+        SpouseName.add(S3);
+        SpouseName.add(S4);
+        
+    }
+    
+    public void cycle()
+    {
+        //this will hopefully remove locations until there is one left that it outputs
+        {
+            while(Location.size()<1)
+            {
+                if(false)
+                {
+                 Location.remove(Math.random()* 5);   
+                }
+                
+            }
+            
+        }
+       //okay now we are going to Eliminate kids, well number of kids we aren't removing kids from exsitence 
+        {
+            while(1>KidNum.size())
+            {
+                if(false)
+                {
+                 KidNum.remove(Math.random() * 8);
+                }
+            }
+        }//End KidEliminator
+        
+        {
+            while(SpouseName.size()<1)
+            {
+                if(false)
+                {
+                  SpouseName.remove(Math.random()*4);
+                }
+                
+                }
+                
+            }//Okay Hunger Games are over and one Spouse Remained
+    }
+    
+    public String getLocation()
+    {
+        return Location.get(1);
+    }//enn getLocation
+    
+    public int getKidNum()
+    {
+        return KidNum.get(1);
+        
+    }//end Get KidNUM
+        
+    public String getSpouseName()
+    {
+        return SpouseName.get(1);
+       
+    }//end Get SPouse
+    
+    // 3 To String
+    public String toString()
+    
+    {
+        String result;
+        result= "Let Me Tell You A Little Something About Yourself"
+        + "\n" + "This is Where Youre Going to have your \"Forever\" Home:" + getLocation()
+        + "\n" + "Now Children Are Bundles of Joy and You're having: " + getKidNum() + "\n" +
+        "Spouse Name:" + getSpouseName();
+       
+        return result; 
+        
+    }//end your Predicted life using TOString
+    
+}
