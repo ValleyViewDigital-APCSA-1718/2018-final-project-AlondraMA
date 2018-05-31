@@ -9,6 +9,8 @@
      After all categories are chosen and have gone through the elimination process it will print out all results that will be your future
      life. I also had the CASH class be the parent as different versions of CASH were created, “HoneyMoon” and “Wedding” and I used super 
      to call the different instance variables from CASH into the Honeymoon and Wedding class.
+     
+     To Play game run the driver and the game will ask for user input and then press enter after each one and the results will print out.
 
 
 
