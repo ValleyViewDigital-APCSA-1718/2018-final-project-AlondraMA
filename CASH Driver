@@ -1,0 +1,42 @@
+ import java.util.Scanner; //Allows use of Scanner
+ 
+ public class CASHDriver
+ {
+     public static void main (String[] args)
+     {
+         Scanner keyboard = new Scanner(System.in);//Creates an object that inputs
+         String L1, L2, L3, L4;
+         int K1, K2, K3, K4;
+         String S1, S2, S3, S4;
+         
+  
+         //Input and output a String
+         System.out.println ("I'm going to predict your life. \nFirst enter 4 Locations: ");
+         L1 = keyboard.nextLine();
+         L2 = keyboard.nextLine();
+         L3 = keyboard.nextLine();
+         L4 = keyboard.nextLine();
+         
+         
+         System.out.println ("Enter 4 Names(Significant other's names) ");
+         S1 = keyboard.nextLine();
+         S2 = keyboard.nextLine();
+         S3 = keyboard.nextLine();
+         S4 = keyboard.nextLine();
+         
+         //Input 4 integers
+         System.out.println ("Enter 4 Numbers: ");
+         K1 = keyboard.nextInt(); //Assigns inputted value into a variable.
+         K2 = keyboard.nextInt();
+         K3 = keyboard.nextInt();
+         K4 = keyboard.nextInt();
+     
+        
+         //Okay hopefully the thing that puts everything together
+         CASH game = new CASH (L1, L2, L3,L4, K1,K2,K3,K4,S1,S2,S3,S4);
+       
+         System.out.println(game.toString());
+         
+     }//end main
+ }// end class
+
