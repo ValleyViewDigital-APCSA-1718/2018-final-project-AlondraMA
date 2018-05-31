@@ -1,0 +1,118 @@
+import java.util.ArrayList;
+
+public class Wedding extends CASH
+{
+    // instance variables
+    private ArrayList<String> WeddingFavor= new ArrayList<String>(4);
+    private ArrayList<Integer> Guests = new ArrayList<Integer>(4);
+    private ArrayList<String> DressCode = new ArrayList<String>(4);
+    
+    //CONSTRUCTORS!:) 
+    public Wedding()
+    {
+     this.WeddingFavor = WeddingFavor;
+     this.Guests = Guests;
+     this.DressCode= DressCode;
+        
+    }//end zero-arg constructors
+    
+    public Wedding(String LW1, String LW2, String LW3, String LW4, 
+    int KW1, int KW2, int KW3, int KW4, 
+    String SW1, String SW2, String SW3, String SW4,
+    String WF1, String WF2, String WF3, String WF4,
+    int G1, int G2, int G3, int G4, 
+    String DC1, String DC2, String DC3, String DC4)
+    {
+       //SuperString resucing us using inheritance
+        super(LW1, LW2, LW3, LW4, KW1, KW2, KW3, KW4, SW1, SW2, SW3, SW4); 
+        WeddingFavor.add(WF1); 
+        WeddingFavor.add(WF2);
+        WeddingFavor.add(WF3);
+        WeddingFavor.add(WF4);
+        Guests.add(G1);
+        Guests.add(G2);
+        Guests.add(G3);
+        Guests.add(G4);
+        DressCode.add(DC1);
+        DressCode.add(DC2);
+        DressCode.add(DC3);
+        DressCode.add(DC4);
+        
+    }//end constructor
+    
+    public void cycle2()
+    {
+        //See Weddings are expensive so we only allow one wedding favor,
+        //so this will remove favors until there is one left
+        
+        {
+            while(WeddingFavor.size()<1)
+            {
+                if(false)
+                {
+                 WeddingFavor.remove(Math.random()* 5);   
+                }
+                
+            }
+            
+        }//One Wedding favor left, end WeddingFavorRemover
+       
+        //Again Weddings are so expensive so we need to have set guest list
+        //this removes number of guests until we have one set number
+        {
+            while(1>Guests.size())
+            {
+                if(false)
+                {
+                 Guests.remove(Math.random() * 8);
+                }
+            }
+        }//End Guest remover
+        
+        {//Can't have different styles at weddings so we remove DressCode until there is one left
+            while(DressCode.size()<1)
+            {
+                if(false)
+                {
+                  DressCode.remove(Math.random()*4);
+                }
+                
+                }
+                
+            }//End Remove DressCode
+    }
+    
+    public String getWeddingFavor()
+    {
+        return WeddingFavor.get(1);
+    }//enn getLocation
+    
+    public int getGuests()
+    {
+        return Guests.get(1);
+        
+    }//end Get KidNUM
+        
+    public String getDressCode()
+    {
+        return DressCode.get(1);
+       
+    }//end Get SPouse
+    
+    // 3 To String
+    public String toString()
+    
+    {
+        String result;
+        result= "Love is in the air so a Wedding occurs"
+        + "\n" + "What you will give your guests for celebrating your love" + getWeddingFavor()
+        + "\n" + "Everyone must see you get married so you invite:" + getGuests() + "\n" +
+        "You'll look the best at your wedding evn though you guest will still look good with this DressCode:" + getDressCode();
+       
+        return result; 
+        
+    }//End toString
+    
+}//End Wedding
+
+        
