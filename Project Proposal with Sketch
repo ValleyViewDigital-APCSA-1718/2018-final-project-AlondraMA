@@ -1,0 +1,30 @@
+                                                                   “Cash”
+
+     High School is hard isn’t it? You have to try and figure out who you are and what you want your future to be like which creates a 
+     lot of pressure. What if that pressure was eased off on you? Worry no longer with the game “Cash” ! Cash will decide your fate for you!
+     No.. I’m not talking about actual cash (although I wish I was) I’m talking about “CASH” a game that tell you your future life. 
+     See the user is asked to input their four choices for a certain category, i.e. Location. An array list is here to keep all the values
+     as we will also use them in several classes.  After fulfilling all categories the computer compares the choices to one and eliminates 
+     a choice until there is one left and it chooses which one to remove using a random number generator and obviously a remove method .
+     After all categories are chosen and have gone through the elimination process it will print out all results that will be your future
+     life. I also had the CASH class be the parent as different versions of CASH were created, “HoneyMoon” and “Wedding” and I used super 
+     to call the different instance variables from CASH into the Honeymoon and Wedding class.
+
+
+
+Okay so my game only outputs words that the user inoutted as that is the game os in this case there wasnot much to sketch to showcase the 
+the work, but I did put an outcome below to allow some insight oon what it may look like. 
+
+                                                           “CASH”
+
+ Here is your future : 
+ 
+Where you’re going to live: (insert one of user’s choice here)
+Who you’re going to be with: (insert one of user’s choice here)
+How many children you will have: (insert one of user’s choice here)
+
+
+“Wedding Version” 
+Your Future life with wedding: 
+*Again one random choice of user input*
+
