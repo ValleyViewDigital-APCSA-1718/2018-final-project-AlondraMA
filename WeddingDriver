@@ -1,130 +1,68 @@
-import java.util.ArrayList;
-
-public class HoneyMoon extends Wedding
-{
-    // instance variables
-    private ArrayList<String> Activity = new ArrayList<String>(4);
-    private ArrayList<Integer>Days = new ArrayList<Integer>(4);
-    private ArrayList<String> Transportation = new ArrayList<String>(4);
-    
-    //CONSTRUCTORS!:) 
-    public HoneyMoon()
-    {
-     this.Activity = Activity;
-     this.Days = Days;
-     this.Transportation= Transportation;
-        
-    }//end zero-arg constructors
-    
-    public HoneyMoon(String LHM1, String LHM2, String LHM3, String LHM4, 
-    int KHM1, int KHM2, int KHM3, int KHM4, 
-    String SHM1, String SHM2, String SHM3, String SHM4,
-    String WFHM1, String WFHM2, String WFHM3, String WFHM4,
-    int GHM1, int GHM2, int GHM3, int GHM4, 
-    String DCHM1, String DCHM2, String DCHM3, String DCHM4, 
-    String A1, String A2,String A3, String A4, 
-    int D1, int D2, int D3,  int D4, 
-    String T1,String T2, String T3, String T4)
-    {
-       //SuperString resucing us using inheritance
-        super(LHM1, LHM2, LHM3,  LHM4,  KHM1,  KHM2,  KHM3, KHM4, SHM1, SHM2,SHM3, SHM4, WFHM1, WFHM2, WFHM3,WFHM4, GHM1, GHM2, GHM3,  GHM4, DCHM1,  DCHM2, DCHM3,DCHM4); 
-        Activity.add(A1); 
-        Activity.add(A2);
-        Activity.add(A3);
-        Activity.add(A4);
-        Days.add(D1);
-        Days.add(D2);
-        Days.add(D3);
-        Days.add(D4);
-        Transportation.add(T1);
-        Transportation.add(T2);
-        Transportation.add(T3);
-        Transportation.add(T4);
-        
-    }//end constructor
-    
-    public void cycle3()
-    {
-        //Can only do so much on a Honeymoon so we use this method to remove
-        // an activity until one remains
-        
-        {
-            while(Activity.size()<1)
-            {
-                if(false)
-                {
-                 Activity.remove(Math.random()* 5);   
-                }
-                
-            }
-            
-        }//One HoneyMoon favor left, end HoneyMoonFavorRemover
-       
-        //How long will one stay? Using the remover we will eliminate user's
-        //number  until there is one set
-        {
-            while(1>Days.size())
-            {
-                if(false)
-                {
-                 Days.remove(Math.random() * 8);
-                }
-            }
-        }//End Guest remover
-        
-        {//How to get there? We remove one by one until there is one left
-            while(Transportation.size()<1)
-            {
-                if(false)
-                {
-                  Transportation.remove(Math.random()*4);
-                }
-                
-                }
-                
-            }//End Remove DressCode
-    }
-    
-    public String getActivity()
-    {
-        return Activity.get(1);
-    }//enn getLocation
-    
-    public int getDays()
-    {
-        return Days.get(1);
-        
-    }//end Get KidNUM
-        
-    public String getTransportation()
-    {
-        return Transportation.get(1);
-       
-    }//end Get SPouse
-    
-    //Brain Method
-    public String language()
-    {
-        String HoneyMoonLanguage = "The language of LOVE:";
-        return HoneyMoonLanguage;
-    }//end aBSTRACT mETHOD
-    
-    // 3 To String
-    public String toString()
-    
-    {
-        String result;
-        result= "Love is in the air so a HoneyMoon occurs"
-        + "\n" + "What will you do on vacation?(4)" + getActivity()
-        + "\n" + "How long you'll stay" + getDays() + "\n" +
-        "How you get there:" + getTransportation();
-       
-        return result; 
-        
-    }//End toString
-    
-}//End HoneyMoon
-
-
-
+/**
+ * Alondra Mendez-Acosta
+ * */
+ 
+ import java.util.Scanner; //Allows use of Scanner
+ 
+ public class WeddingDriver
+ {
+     public static void main (String[] args)
+     {
+         Scanner keyboard = new Scanner(System.in);//Creates an object that inputs
+         String LW1, LW2, LW3, LW4;
+         int KW1, KW2, KW3, KW4;
+         String SW1, SW2, SW3, SW4;
+         String WF1, WF2, WF3, WF4;
+         int G1,G2, G3, G4;
+         String DC1, DC2, DC3, DC4;
          
+  
+         //Input and output a String
+         System.out.println ("Your Wedding Location:(4) ");
+         LW1 = keyboard.nextLine();
+         LW2 = keyboard.nextLine();
+         LW3 = keyboard.nextLine();
+         LW4 = keyboard.nextLine();
+         
+         
+         System.out.println ("Spouse's Name(4):(You should know it by now hopefully) ");
+         SW1 = keyboard.nextLine();
+         SW2 = keyboard.nextLine();
+         SW3 = keyboard.nextLine();
+         SW4 = keyboard.nextLine();
+         
+         
+         System.out.println ("How many Brats.. I mean Kids at Wedding:(Insert 4 locations)");
+         KW1 = keyboard.nextInt(); //Assigns inputted value into a variable.
+         KW2 = keyboard.nextInt();
+         KW3 = keyboard.nextInt();
+         KW4 = keyboard.nextInt();
+         
+         System.out.println ("Enter 4 Wedding Favors for Guests:");
+         WF1 = keyboard.nextLine();
+         WF2 = keyboard.nextLine();
+         WF3 = keyboard.nextLine();
+         WF4 = keyboard.nextLine();
+         
+         System.out.println ("Enter Number of Guests:(4 numbers)");
+         G1 = keyboard.nextInt();
+         G2 = keyboard.nextInt();
+         G3 = keyboard.nextInt();
+         G4 = keyboard.nextInt();
+         
+         System.out.println ("Enter Dress Code attire: (4)");
+         DC1 = keyboard.nextLine();
+         DC2 = keyboard.nextLine();
+         DC3 = keyboard.nextLine();
+         DC4 = keyboard.nextLine();
+         
+     
+        
+         //Okay hopefully the thing that puts everything together
+         CASH game2 = new Wedding (LW1, LW2, LW3,LW4, KW1,KW2,KW3,KW4,SW1,SW2,SW3,SW4, WF1,WF2,WF3,WF4,G1,G2,G3,G4,DC1,DC2,DC3,DC4);
+       
+         System.out.println(game2.toString());
+         
+     }//end main
+ }// end class
+
